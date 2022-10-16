@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+
+<link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Bem vindo ao Quizz do nhami nhami</h1>
+        <table id="quizzItems">
+            <thead>
+                <tr>
+                    <th>Refeição</th>
+                    <th>Alimentos</th>
+                    <th>Avaliação</th>
+                    <th>Data de envio</th>
+                    <th>Hora de envio</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+    </header>
+    <main>
+        <a href="#abrirModal">
+            <button>Abrir Quizz</button>
+        </a>
+
+        <div id="abrirModal" class="modal">
+            <a href="#fechar" title="Fechar" class="fechar">x</a>
+            <form id="quizz">
+                <div id="q1">
+                    <p>Qual refeição você realizou?</p>
+                    <input type="radio" name="q1" id="cafe" value="Café da manhã">
+                    <label for="cafe">Café da manhã</label><br>
+        
+                    <input type="radio" name="q1" id="almoco" value="Almoço">
+                    <label for="almoco">Almoço</label><br>
+        
+                    <input type="radio" name="q1" id="lanche" value="Lanche">
+                    <label for="lanche">Lanche</label><br>
+        
+                    <input type="radio" name="q1" id="jantar" value="Jantar">
+                    <label for="jantar">Jantar</label>
+                </div>
+    
+                <div id="q2">
+                    <p for="">Qual(is) alimento(s) você consumiu?</p>
+                    <input type="checkbox" name="q2" id="" value="Pão">
+                    <label for="pao">Pão</label><br>
+        
+                    <input type="checkbox" name="q2" id="" value="Manteiga">
+                    <label for="manteiga">Manteiga</label><br>
+        
+                    <input type="checkbox" name="q2" id="" value="Café">
+                    <label for="cafe">Café</label><br>
+        
+                    <input type="checkbox" name="q2" id="" value="Frutas">
+                    <label for="frutas">Frutas</label><br>
+        
+                    <input type="checkbox" name="q2" id="" value="Arroz">
+                    <label for="arroz">Arroz</label><br>
+                    
+                    <input type="checkbox" name="q2" id="" value="Carne">
+                    <label for="Carne">Carne</label><br>
+                    
+                    <input type="checkbox" name="q2" id="" value="Frango">
+                    <label for="frango">Frango</label><br>
+                    
+                    <input type="checkbox" name="q2" id="" value="Salada">
+                    <label for="salada">Salada</label>
+                </div>
+    
+                <div id="q3">
+                    <p>Em uma escala de 0 a 10, classifique sua refeição:</p>
+                    <label for="">Ruim</label>
+                    <input type="range" name="q3" min="0" max="10" step="1">
+                    <label for="cafe">Ótima</label><br>
+                </div>
+    
+                <br>
+                <input id="btnSave" type="submit" value="Enviar">
+                <br>
+                <label for="inputFileNameToSaveAs">Nome do arquivo</label>
+                <input id="inputFileNameToSaveAs"></input>
+                <input type="submit" value="Salvar em arquivo" onclick="guardaFormulario();">
+            </form>
+            
+            
+        </div>
+        
+
+    </main>
+    <footer></footer>
+</body>
+</html>
